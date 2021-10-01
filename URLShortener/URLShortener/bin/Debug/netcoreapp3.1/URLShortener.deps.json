@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "URLShortener/1.0.0": {
         "dependencies": {
+          "FluentValidation": "10.3.3",
           "Microsoft.EntityFrameworkCore.Design": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
           "System.Configuration.ConfigurationManager": "5.0.0",
@@ -306,6 +307,17 @@
         },
         "compile": {
           "URLShortener.dll": {}
+        }
+      },
+      "FluentValidation/10.3.3": {
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.3.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -3096,6 +3108,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/10.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
+      "path": "fluentvalidation/10.3.3",
+      "hashPath": "fluentvalidation.10.3.3.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj": {}
+    "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj": {}
   },
   "projects": {
-    "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj": {
+    "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj",
+        "projectUniqueName": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj",
         "projectName": "URLShortener",
-        "projectPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj",
+        "projectPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj",
         "packagesPath": "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\obj\\",
+        "outputPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\an.nguyentranthai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Byl7TkskiUxr+ZxubtVP8nOAqFcT5srLh10i6QEdh2y/iB1/UlOmnlzlAQ4QIqeTMHxBLDUoH5nIP+aVyYAipg==",
+  "dgSpecHash": "Tx2kO/ZDO7RHSKMEsSd/7kDEB7Wcxwl6H3RPX5jTGEJjhRx2kR+h/VRy6BR9czzU7FfCzJacRFrn8a+F8MfOgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj",
+  "projectFilePath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

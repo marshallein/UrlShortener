@@ -22,7 +22,10 @@ namespace URLShortener.Repository
 
         public Urlshortener addUrl(string url)
         {
-            url = _validate.masterUrlcheckHttps(url);
+            if (!_validate.masterUrlcheckHttpsFormat(url))
+            {
+                return null;
+            }
             var obToAdd = new Urlshortener { UrlMaster = url, UrlShort = _urlrand.getShortUrl() };
             if (_validate.masterUrlValidateDuplicate(obToAdd))
             {

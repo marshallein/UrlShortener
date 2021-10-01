@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/10.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1511,6 +1520,24 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.3": {
+      "sha512": "sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -5768,6 +5795,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "FluentValidation >= 10.3.3",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
       "System.Configuration.ConfigurationManager >= 5.0.0"
@@ -5779,11 +5807,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj",
+      "projectUniqueName": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj",
       "projectName": "URLShortener",
-      "projectPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\URLShortener.csproj",
+      "projectPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\URLShortener.csproj",
       "packagesPath": "C:\\Users\\an.nguyentranthai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\URLShortener\\URLShortener\\obj\\",
+      "outputPath": "C:\\Users\\an.nguyentranthai\\Documents\\ProjectWork\\C#\\UrlShortener_Program\\URLShortener\\URLShortener\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\an.nguyentranthai\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5812,6 +5840,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[10.3.3, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

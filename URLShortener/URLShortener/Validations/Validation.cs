@@ -27,15 +27,15 @@ namespace URLShortener.Validations
             }
         }
 
-        public String masterUrlcheckHttps(string url)
+        public bool masterUrlcheckHttpsFormat(string url)
         {
-            if (!Regex.IsMatch(url, @"^(http|https)://.*$"))
+            if (!Regex.IsMatch(url, @"((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)"))
             {
-                return "https://" + url;
+                return false;
             }
             else
             {
-                return url;
+                return true;
             }
         }
     }

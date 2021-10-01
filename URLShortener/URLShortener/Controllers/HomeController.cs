@@ -42,7 +42,7 @@ namespace URLShortener.Controllers
                 var urlshort = _urlrepo.addUrl(url.UrlMaster);
                 if (urlshort == null)
                 {
-                    ModelState.AddModelError("UrlMaster", "Maybe the Url has taken by another Url, Try again!");
+                    ModelState.AddModelError("UrlMaster", "error URL format or Maybe the URL has taken by another Url, Try again!");
                     return View("Index");
                 }
                 ViewBag.shortlink = urlshort.UrlShort;
