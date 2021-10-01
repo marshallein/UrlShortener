@@ -13,6 +13,7 @@ namespace URLShortener.Repository
         private readonly URLShortenerContext _context;
         private readonly RandomURl _urlrand;
         private readonly Validation _validate;
+
         public UrlRepository(URLShortenerContext context, RandomURl urlrand)
         {
             _context = context;

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using URLShortener.Models;
-using URLShortener.Validations;
 using URLShortener.Repository;
 
 namespace URLShortener.Controllers
@@ -14,7 +13,6 @@ namespace URLShortener.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
         private IUrlRepository _urlrepo;
 
         public HomeController(ILogger<HomeController> logger)
@@ -34,7 +32,7 @@ namespace URLShortener.Controllers
         {
             try
             {
-                // Model validation 
+                //// Model validation 
                 if (!ModelState.IsValid)
                 {
                     return View("Index");
@@ -50,7 +48,7 @@ namespace URLShortener.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.ErrorMessage = "Some error have been occur";
+                ViewBag.ErrorMessage = "Some error have been occur " + ex.Message;
                 return View("Index");
             }
         }
